@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WalletTracker</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="summary">Summary</string>
+    <string name="show_more">Show more</string>
+    <string name="transaction_edit_total">Edit</string>
+    <string name="edit_income">Edit Income</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="category">Category</string>
+    <string name="cancel">Cancel</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="general">General</string>
+    <string name="transaction_last_no_data_title">No Transactions</string>
+    <string name="transaction_last_no_data_message">Do some transactions</string>
+    <string name="transaction_last">Last Transactions</string>
+    <string name="total">Total</string>
+    <string name="amount">Amount</string>
+    <string name="budget">Budget</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="balance">Balance</string>
+    <string name="spent">"Spent: "</string>
+    <string name="budget_slash">" / Budget: "</string>
+</resources>
