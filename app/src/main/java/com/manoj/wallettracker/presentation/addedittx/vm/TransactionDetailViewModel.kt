@@ -41,7 +41,6 @@ class TransactionDetailViewModel @Inject constructor(
     init {
         fetchCategories()
         initSaveAction()
-        initDeleteAction()
         getTransactionDetails()
     }
 
@@ -69,10 +68,6 @@ class TransactionDetailViewModel @Inject constructor(
     }
 
     private fun initSaveAction() {
-
-    }
-
-    private fun initDeleteAction() {
 
     }
 

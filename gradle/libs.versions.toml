@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.3"
+appcompat = "1.7.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -11,9 +12,10 @@ composeBom = "2024.04.01"
 navigationCompose = "2.8.8"
 androidxCompose = "1.7.5"
 coreSplashscreen = "1.2.0-beta01"
-biometricKtx = "1.4.0-alpha02"
+biometricKtx = "1.1.0"
 
 [libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -33,7 +35,7 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 androidx-compose-material-iconsCore = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "androidxCompose" }
 androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "androidxCompose" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashscreen" }
-androidx-biometric-ktx = { group = "androidx.biometric", name = "biometric-ktx", version.ref = "biometricKtx" }
+androidx-biometric-ktx = { group = "androidx.biometric", name = "biometric", version.ref = "biometricKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.WalletTracker" parent="android:Theme.Material.Light.NoActionBar" />
+<!--    <style name="Theme.WalletTracker" parent="android:Theme.Material.Light.NoActionBar" />-->
+    <style name="Theme.WalletTracker" parent="Theme.AppCompat.Light.NoActionBar" />
 
     <style name="Theme.AppSplash" parent="android:Theme.DeviceDefault.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>

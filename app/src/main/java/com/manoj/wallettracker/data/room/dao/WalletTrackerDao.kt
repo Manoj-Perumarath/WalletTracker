@@ -28,8 +28,7 @@ interface WalletTrackerDao {
     abstract suspend fun updateTransaction(data: TransactionDb)
 
     @Query("DELETE FROM TransactionDb WHERE transaction_id = :id")
-    abstract fun deleteTransaction(id: Int)
-
+    abstract fun deleteTransaction(id: Int) :Unit
 
     @Query(
         """

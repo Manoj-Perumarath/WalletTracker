@@ -4,9 +4,10 @@ import com.manoj.wallettracker.data.model.transaction.Transaction
 import com.manoj.wallettracker.data.ui.addedittx.repo.TransactionRepo
 import com.manoj.wallettracker.data.usecase.WalletUseCase
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.onStart
+import kotlinx.coroutines.withContext
 import java.time.LocalDateTime
 import javax.inject.Inject
+import kotlin.coroutines.coroutineContext
 
 class TransactionRepoImpl @Inject constructor(private val walletUseCase: WalletUseCase) :
     TransactionRepo {
@@ -25,7 +26,7 @@ class TransactionRepoImpl @Inject constructor(private val walletUseCase: WalletU
     }
 
     override fun getTransaction(transactionId: Int): Flow<Transaction> {
-       return  walletUseCase.getTransaction(transactionId)
+        return walletUseCase.getTransaction(transactionId)
     }
 
     private suspend fun insertNewTransaction(
@@ -56,6 +57,8 @@ class TransactionRepoImpl @Inject constructor(private val walletUseCase: WalletU
 
 
     override suspend fun deleteTransaction(id: Int) {
-        walletUseCase.deleteTransaction(id)
+        withContext(coroutineContext) {
+            walletUseCase.deleteTransaction(id)
+        }
     }
 }
